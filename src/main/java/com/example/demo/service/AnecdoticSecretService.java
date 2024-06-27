@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,4 +25,11 @@ public class AnecdoticSecretService {
         return anecdoticSecret;
     }
     
+    private Random random = new Random();
+
+    public Long getRandomAnecdoticSecretId() {
+        List<AnecdoticSecret> anecdoticSecrets = anecdoticSecretRepository.findAll();
+        int randomIndex = random.nextInt(anecdoticSecrets.size());
+        return anecdoticSecrets.get(randomIndex).getId();
+    }
 }
