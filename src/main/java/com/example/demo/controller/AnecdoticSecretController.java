@@ -26,7 +26,7 @@ public class AnecdoticSecretController {
         return this.anecdoticSecretService.getAll();
     }
 
-    @Operation(summary = "Get item by id", description = "Get item by id")
+    @Operation(summary = "Get anecdotic secret by id", description = "Get anecdotic secret by id")
     @GetMapping("/{id}")
     public AnecdoticSecret getById(@PathVariable Long id) {
         return this.anecdoticSecretService.getById(id);

@@ -20,13 +20,13 @@ public class PrimordialSecretController {
     @Autowired
     private PrimordialSecretService primordialSecretService;
 
-    @Operation(summary = "Get all anecdotic secrets", description = "Get all anecdotic secrets")
+    @Operation(summary = "Get all primordial secrets", description = "Get all primordial secrets")
     @GetMapping("")
     public List<PrimordialSecret> getAll() {
         return this.primordialSecretService.getAll();
     }
 
-    @Operation(summary = "Get item by id", description = "Get item by id")
+    @Operation(summary = "Get primordial secret by id", description = "Get primordial secret by id")
     @GetMapping("/{id}")
     public PrimordialSecret getById(@PathVariable Long id) {
         return this.primordialSecretService.getById(id);
