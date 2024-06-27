@@ -24,5 +24,4 @@ public class AnecdoticSecretService {
         return anecdoticSecret;
     }
     
-
 }
