@@ -23,5 +23,6 @@ public class AnecdoticSecretService {
         AnecdoticSecret anecdoticSecret = this.anecdoticSecretRepository.findById(id).get();
         return anecdoticSecret;
     }
+    
 
 }
