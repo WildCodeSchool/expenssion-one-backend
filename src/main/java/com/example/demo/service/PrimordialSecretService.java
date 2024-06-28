@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,4 +25,11 @@ public class PrimordialSecretService {
         return primordialSecret;
     }
 
+    private Random random = new Random();
+
+    public Long getRandomPrimordialSecretId() {
+        List<PrimordialSecret> primordialSecrets = primordialSecretRepository.findAll();
+        int randomIndex = random.nextInt(primordialSecrets.size());
+        return primordialSecrets.get(randomIndex).getId();
+    }
 }
