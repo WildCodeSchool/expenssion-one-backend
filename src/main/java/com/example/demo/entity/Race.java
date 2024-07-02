@@ -27,21 +27,25 @@ public class Race {
   private Integer minHeight;
   private Integer maxHeight;
   private Integer speed;
+  private Integer number_additional_language;
+  private String url;
 
   public Race() {
   }
 
-  public Race(Long id, String name, String description, String racialTrait, Integer minAge, Integer maxAge,
-      Integer minHeight, Integer maxHeight, Integer speed) {
-    this.id = id;
-    this.name = name;
+  public Race(String description, Long id, Integer maxAge, Integer maxHeight, Integer minAge, Integer minHeight,
+      String name, Integer number_additional_language, String racialTrait, Integer speed, String url) {
     this.description = description;
-    this.racialTrait = racialTrait;
-    this.minAge = minAge;
+    this.id = id;
     this.maxAge = maxAge;
-    this.minHeight = minHeight;
     this.maxHeight = maxHeight;
+    this.minAge = minAge;
+    this.minHeight = minHeight;
+    this.name = name;
+    this.number_additional_language = number_additional_language;
+    this.racialTrait = racialTrait;
     this.speed = speed;
+    this.url = url;
   }
 
   public Long getId() {
@@ -126,6 +130,22 @@ public class Race {
 
   public void setLanguages(List<Language> languages) {
     this.languages = languages;
+  }
+
+  public Integer getNumber_additional_language() {
+    return number_additional_language;
+  }
+
+  public void setNumber_additional_language(Integer number_additional_language) {
+    this.number_additional_language = number_additional_language;
+  }
+
+  public String getUrl() {
+    return url;
+  }
+
+  public void setUrl(String url) {
+    this.url = url;
   }
 
 }
