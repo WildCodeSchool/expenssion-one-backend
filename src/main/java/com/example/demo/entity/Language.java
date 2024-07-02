@@ -1,9 +1,13 @@
 package com.example.demo.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -48,6 +52,17 @@ public class Language {
 
   public void setDescription(String description) {
     this.description = description;
+  }
+
+  @ManyToMany(mappedBy = "languages")
+  private List<Race> races = new ArrayList<>();
+
+  public List<Race> getRaces() {
+    return races;
+  }
+
+  public void setRaces(List<Race> races) {
+    this.races = races;
   }
 
 }

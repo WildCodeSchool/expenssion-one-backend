@@ -1,9 +1,15 @@
 package com.example.demo.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -108,6 +114,18 @@ public class Race {
 
   public void setSpeed(Integer speed) {
     this.speed = speed;
+  }
+
+  @ManyToMany
+  @JoinTable(name = "race_language", joinColumns = @JoinColumn(name = "race_id"), inverseJoinColumns = @JoinColumn(name = "language_id"))
+  private List<Language> languages = new ArrayList<>();
+
+  public List<Language> getLanguages() {
+    return languages;
+  }
+
+  public void setLanguages(List<Language> languages) {
+    this.languages = languages;
   }
 
 }
