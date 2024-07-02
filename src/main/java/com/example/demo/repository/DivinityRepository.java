@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.Divinity;
 
 @Repository
-public interface DivnityRepository extends JpaRepository<Divinity, Long> {
+public interface DivinityRepository extends JpaRepository<Divinity, Long> {
 
 }
