@@ -21,29 +21,32 @@ public class Race {
   private Long id;
   private String name;
   private String description;
-  private String racialTrait;
-  private Integer minAge;
-  private Integer maxAge;
-  private Integer minHeight;
-  private Integer maxHeight;
+  private String racial_trait;
+  private Integer min_age;
+  private Integer max_age;
+  private Integer min_height;
+  private Integer max_height;
   private Integer speed;
+  private String[] default_languages;
   private Integer number_additional_language;
   private String url;
 
   public Race() {
   }
 
-  public Race(String description, Long id, Integer maxAge, Integer maxHeight, Integer minAge, Integer minHeight,
-      String name, Integer number_additional_language, String racialTrait, Integer speed, String url) {
+  public Race(String[] default_languages, String description, Long id, Integer max_age, Integer max_height,
+      Integer min_age, Integer min_height, String name, Integer number_additional_language, String racial_trait,
+      Integer speed, String url) {
+    this.default_languages = default_languages;
     this.description = description;
     this.id = id;
-    this.maxAge = maxAge;
-    this.maxHeight = maxHeight;
-    this.minAge = minAge;
-    this.minHeight = minHeight;
+    this.max_age = max_age;
+    this.max_height = max_height;
+    this.min_age = min_age;
+    this.min_height = min_height;
     this.name = name;
     this.number_additional_language = number_additional_language;
-    this.racialTrait = racialTrait;
+    this.racial_trait = racial_trait;
     this.speed = speed;
     this.url = url;
   }
@@ -72,44 +75,44 @@ public class Race {
     this.description = description;
   }
 
-  public String getRacialTrait() {
-    return racialTrait;
+  public String getRacial_trait() {
+    return racial_trait;
   }
 
-  public void setRacialTrait(String racialTrait) {
-    this.racialTrait = racialTrait;
+  public void setRacial_trait(String racial_trait) {
+    this.racial_trait = racial_trait;
   }
 
-  public Integer getMinAge() {
-    return minAge;
+  public Integer getMin_age() {
+    return min_age;
   }
 
-  public void setMinAge(Integer minAge) {
-    this.minAge = minAge;
+  public void setMin_age(Integer min_age) {
+    this.min_age = min_age;
   }
 
-  public Integer getMaxAge() {
-    return maxAge;
+  public Integer getMax_age() {
+    return max_age;
   }
 
-  public void setMaxAge(Integer maxAge) {
-    this.maxAge = maxAge;
+  public void setMax_age(Integer max_age) {
+    this.max_age = max_age;
   }
 
-  public Integer getMinHeight() {
-    return minHeight;
+  public Integer getMin_height() {
+    return min_height;
   }
 
-  public void setMinHeight(Integer minHeight) {
-    this.minHeight = minHeight;
+  public void setMin_height(Integer min_height) {
+    this.min_height = min_height;
   }
 
-  public Integer getMaxHeight() {
-    return maxHeight;
+  public Integer getMax_height() {
+    return max_height;
   }
 
-  public void setMaxHeight(Integer maxHeight) {
-    this.maxHeight = maxHeight;
+  public void setMax_height(Integer max_height) {
+    this.max_height = max_height;
   }
 
   public Integer getSpeed() {
@@ -120,16 +123,12 @@ public class Race {
     this.speed = speed;
   }
 
-  @ManyToMany
-  @JoinTable(name = "race_language", joinColumns = @JoinColumn(name = "race_id"), inverseJoinColumns = @JoinColumn(name = "language_id"))
-  private List<Language> languages = new ArrayList<>();
-
-  public List<Language> getLanguages() {
-    return languages;
+  public String[] getDefault_languages() {
+    return default_languages;
   }
 
-  public void setLanguages(List<Language> languages) {
-    this.languages = languages;
+  public void setDefault_languages(String[] default_languages) {
+    this.default_languages = default_languages;
   }
 
   public Integer getNumber_additional_language() {
@@ -146,6 +145,18 @@ public class Race {
 
   public void setUrl(String url) {
     this.url = url;
+  }
+
+  @ManyToMany
+  @JoinTable(name = "race_language", joinColumns = @JoinColumn(name = "race_id"), inverseJoinColumns = @JoinColumn(name = "language_id"))
+  private List<Language> languages = new ArrayList<>();
+
+  public List<Language> getLanguages() {
+    return languages;
+  }
+
+  public void setLanguages(List<Language> languages) {
+    this.languages = languages;
   }
 
 }

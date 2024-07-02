@@ -9,8 +9,10 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.AnecdoticSecret;
 import com.example.demo.entity.PrimordialSecret;
+import com.example.demo.entity.Race;
 import com.example.demo.repository.AnecdoticSecretRepository;
 import com.example.demo.repository.PrimordialSecretRepository;
+import com.example.demo.repository.RaceRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
@@ -18,10 +20,13 @@ public class DbService {
 
     private final AnecdoticSecretRepository anecdoticSecretRepository;
     private final PrimordialSecretRepository primordialSecretRepository;
+    private final RaceRepository raceRepository;
 
-    public DbService(AnecdoticSecretRepository anecdoticSecretRepository, PrimordialSecretRepository primordialSecretRepository) {
+    public DbService(AnecdoticSecretRepository anecdoticSecretRepository,
+            PrimordialSecretRepository primordialSecretRepository, RaceRepository raceRepository) {
         this.anecdoticSecretRepository = anecdoticSecretRepository;
         this.primordialSecretRepository = primordialSecretRepository;
+        this.raceRepository = raceRepository;
     }
 
     public void insertDB() {
@@ -35,8 +40,14 @@ public class DbService {
             PrimordialSecret[] primordialSecretsArray = mapper.readValue(inputStream2, PrimordialSecret[].class);
             List<PrimordialSecret> primordialSecretsList = Arrays.asList(primordialSecretsArray);
             primordialSecretRepository.saveAll(primordialSecretsList);
+            anecdoticSecretRepository.saveAll(secretsList);
+            InputStream inputStream3 = getClass().getResourceAsStream("/data/race.json");
+            Race[] racesArray = mapper.readValue(inputStream3, Race[].class);
+            List<Race> racesList = Arrays.asList(racesArray);
+            raceRepository.saveAll(racesList);
+
         }
-        
+
         catch (IOException e) {
             e.printStackTrace();
         }
