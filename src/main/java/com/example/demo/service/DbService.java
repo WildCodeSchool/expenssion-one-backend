@@ -8,9 +8,11 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.AnecdoticSecret;
+import com.example.demo.entity.Language;
 import com.example.demo.entity.PrimordialSecret;
 import com.example.demo.entity.Race;
 import com.example.demo.repository.AnecdoticSecretRepository;
+import com.example.demo.repository.LanguageRepository;
 import com.example.demo.repository.PrimordialSecretRepository;
 import com.example.demo.repository.RaceRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,12 +23,15 @@ public class DbService {
     private final AnecdoticSecretRepository anecdoticSecretRepository;
     private final PrimordialSecretRepository primordialSecretRepository;
     private final RaceRepository raceRepository;
+    private final LanguageRepository languageRepository;
 
     public DbService(AnecdoticSecretRepository anecdoticSecretRepository,
-            PrimordialSecretRepository primordialSecretRepository, RaceRepository raceRepository) {
+            PrimordialSecretRepository primordialSecretRepository, RaceRepository raceRepository,
+            LanguageRepository languageRepository) {
         this.anecdoticSecretRepository = anecdoticSecretRepository;
         this.primordialSecretRepository = primordialSecretRepository;
         this.raceRepository = raceRepository;
+        this.languageRepository = languageRepository;
     }
 
     public void insertDB() {
@@ -45,7 +50,10 @@ public class DbService {
             Race[] racesArray = mapper.readValue(inputStream3, Race[].class);
             List<Race> racesList = Arrays.asList(racesArray);
             raceRepository.saveAll(racesList);
-
+            InputStream inputStream4 = getClass().getResourceAsStream("/data/language.json");
+            Language[] languagesArray = mapper.readValue(inputStream4, Language[].class);
+            List<Language> languagesList = Arrays.asList(languagesArray);
+            languageRepository.saveAll(languagesList);
         }
 
         catch (IOException e) {
