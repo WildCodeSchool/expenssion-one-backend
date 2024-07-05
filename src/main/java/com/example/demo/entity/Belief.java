@@ -8,19 +8,15 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class City {
+public class Belief {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
-    private String url;
-
     @ManyToOne
-    @JoinColumn(name = "city_id")
-    private Region region;
-
-    public City(){}
+    @JoinColumn(name = "belief_id")
+    private Kingdom kingdom;
 
     public Long getId() {
         return id;
@@ -30,19 +26,15 @@ public class City {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public Kingdom getKingdom() {
+        return kingdom;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setKingdom(Kingdom kingdom) {
+        this.kingdom = kingdom;
     }
 
-    public String getUrl() {
-        return url;
-    }
+    
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
+    
 }

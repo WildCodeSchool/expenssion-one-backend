@@ -8,7 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+
 
 @Entity
 public class Kingdom {
@@ -25,6 +25,9 @@ public class Kingdom {
 
     @OneToMany(mappedBy = "kingdom")
     List<Divinity> divinities = new ArrayList<Divinity>();
+
+    @OneToMany(mappedBy = "kingdom")
+    List<Belief> believes = new ArrayList<Belief>();
     
     public Long getId() {
         return id;
@@ -61,6 +64,12 @@ public class Kingdom {
     }
     public void setDivinities(List<Divinity> divinities) {
         this.divinities = divinities;
+    }
+    public List<Belief> getBelieves() {
+        return believes;
+    }
+    public void setBelieves(List<Belief> believes) {
+        this.believes = believes;
     }
 
     

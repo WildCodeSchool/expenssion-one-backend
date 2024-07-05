@@ -12,43 +12,42 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Region;
-import com.example.demo.service.RegionService;
+import com.example.demo.entity.Belief;
+import com.example.demo.entity.Divinity;
+import com.example.demo.service.BeliefService;
+import com.example.demo.service.DivinityService;
 
 import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
-@RequestMapping("/regions")
-public class RegionController {
-
+@RequestMapping("/believes")
+public class BeliefController {
     @Autowired
-    private RegionService regionService;
+    private BeliefService beliefService;
 
-    @Operation(summary = "Get all regions", description = "Get all regions")
     @GetMapping("")
-    public List<Region> getAll() {
-        return this.regionService.getAll();
+    public List<Belief> getAll() {
+        return this.beliefService.getAll();
     }
 
-    @Operation(summary = "Get region by id", description = "Get region by id")
     @GetMapping("/{id}")
-    public Region getById(@PathVariable Long id) {
-        return this.regionService.getById(id);
+    public Belief getById(@PathVariable Long id) {
+        return this.beliefService.getById(id);
     }
 
     @PostMapping("")
-    public Region create(@RequestBody Region region){
-        return this.regionService.createRegion(region);
+    public Belief create(@RequestBody Belief belief){
+        return this.beliefService.createBelief(belief);
 
     }
 
     @PutMapping("/{id}")
-    public Region update(@PathVariable Long id, @RequestBody Region region){
-        return this.regionService.UpdateRegion(id, region);
+    public Belief update(@PathVariable Long id, @RequestBody Belief belief){
+        return this.beliefService.UpdateBelief(id, belief);
     }
 
     @DeleteMapping("/{id}")
     public boolean delete(@PathVariable Long id){
-        return this.regionService.DeleteRegion(id);
+        return this.beliefService.DeleteBelief(id);
     }
 }
