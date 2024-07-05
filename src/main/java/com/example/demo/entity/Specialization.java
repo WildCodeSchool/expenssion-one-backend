@@ -1,4 +1,4 @@
-package blopGameStudio.com.example.models;
+package com.example.demo.entity;
 
 import java.util.List;
 import java.util.Set;
@@ -17,19 +17,19 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "specializations")
+@Table(name = "specialization")
 public class Specialization {
     
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
 
     private String name;
     private String imageUrl;
 
     @ManyToMany
     @JoinTable(
-        name = "specializations_jobs",
+        name = "specialization_job",
         joinColumns = @JoinColumn(name = "specializationId"),
         inverseJoinColumns = @JoinColumn(name = "jobId")
     )
@@ -64,13 +64,10 @@ public class Specialization {
 
 
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

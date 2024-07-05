@@ -1,16 +1,23 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.Specialization;
-import com.example.demo.service.SpecializationService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.entity.Specialization;
+import com.example.demo.service.SpecializationService;
+
 @RestController
-@RequestMapping("/api/specializations")
+@RequestMapping("/specializations")
 public class SpecializationController {
 
     @Autowired
@@ -33,21 +40,7 @@ public class SpecializationController {
         return specializationService.save(specialization);
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<Specialization> updateSpecialization(@PathVariable Long id, @RequestBody Specialization specializationDetails) {
-        Optional<Specialization> specialization = specializationService.findById(id);
-        if (specialization.isPresent()) {
-            Specialization spec = specialization.get();
-            spec.setName(specializationDetails.getName());
-            spec.setDescription(specializationDetails.getDescription());
-            spec.setStatistics(specializationDetails.getStatistics());
-            // Mettre à jour les relations si nécessaire
-            Specialization updatedSpecialization = specializationService.save(spec);
-            return ResponseEntity.ok(updatedSpecialization);
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteSpecialization(@PathVariable Long id) {

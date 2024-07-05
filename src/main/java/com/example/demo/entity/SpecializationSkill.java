@@ -1,4 +1,4 @@
-package blopGameStudio.com.example.models;
+package com.example.demo.entity;
 
 
 
@@ -12,7 +12,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "specializationsSkills")
+@Table(name = "specializationsSkill")
 public class SpecializationSkill{
     
     @Id

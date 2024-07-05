@@ -1,4 +1,4 @@
-package blopGameStudio.com.example.models;
+package com.example.demo.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -12,12 +12,12 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "SpecializationContents")
+@Table(name = "SpecializationContent")
 public class SpecializationContent {
     
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
 
     private Integer number;
 
@@ -47,13 +47,11 @@ public class SpecializationContent {
 
 
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+
 
     public String getContent() {
         return content;

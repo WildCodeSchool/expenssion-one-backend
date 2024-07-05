@@ -1,12 +1,12 @@
-package blopGameStudio.com.example.repositories;
+package com.example.demo.repository;
 
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import blopGameStudio.com.example.models.Specialization;
+import com.example.demo.entity.Specialization;
 
 
-public interface SpecializationRepository extends JpaRepository<Specialization, Integer>{
+public interface SpecializationRepository extends JpaRepository<Specialization, Long>{
 
 }
