@@ -11,7 +11,6 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "kingdom")
 public class Kingdom {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,10 +20,10 @@ public class Kingdom {
     private String description;
     private String urlMap;
 
-    @OneToMany(mappedBy = "region")
+    @OneToMany(mappedBy = "kingdom")
     List<Region> regions = new ArrayList<Region>();
 
-    @OneToMany(mappedBy = "divinity")
+    @OneToMany(mappedBy = "kingdom")
     List<Divinity> divinities = new ArrayList<Divinity>();
     
     public Long getId() {

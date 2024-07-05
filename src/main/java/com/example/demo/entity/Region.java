@@ -13,7 +13,6 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "region")
 public class Region {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +22,7 @@ public class Region {
     private String description;
     private String url_map;
 
-    @OneToMany(mappedBy = "city")
+    @OneToMany(mappedBy = "region")
     private List<City> cities = new ArrayList<City>();
 
     @ManyToOne
