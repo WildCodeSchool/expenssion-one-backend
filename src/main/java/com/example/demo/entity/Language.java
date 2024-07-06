@@ -20,12 +20,14 @@ public class Language {
   private String name;
   private String description;
 
+    @ManyToMany(mappedBy = "languages")
+  private List<Race> races = new ArrayList<>();
+
   public Language() {
 
   }
 
-  public Language(Long id, String name, String description) {
-    this.id = id;
+  public Language( String name, String description) {
     this.name = name;
     this.description = description;
   }
@@ -34,9 +36,6 @@ public class Language {
     return id;
   }
 
-  public void setId(Long id) {
-    this.id = id;
-  }
 
   public String getName() {
     return name;
@@ -54,8 +53,7 @@ public class Language {
     this.description = description;
   }
 
-  @ManyToMany(mappedBy = "languages")
-  private List<Race> races = new ArrayList<>();
+
 
   public List<Race> getRaces() {
     return races;

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
+
 import com.example.demo.entity.Divinity;
 import com.example.demo.repository.DivinityRepository;
 
@@ -32,12 +33,12 @@ public class DivinityService {
 
     public Divinity UpdateDivinity(@PathVariable Long id, @RequestBody Divinity divinity){
         Divinity divinityToUpdate = this.divinityRepository.findById(id).get();
-        divinityToUpdate.setEffects(divinity.getEffects());
+       // divinityToUpdate.setEffects(divinity.getEffects());
         divinityToUpdate.setGender(divinity.getGender());
         divinityToUpdate.setKingdom(divinity.getKingdom());
         divinityToUpdate.setName(divinity.getName());
-        divinityToUpdate.setStatistics(divinity.getStatistics());
-        divinityToUpdate.setType(divinity.getType());
+        //divinityToUpdate.setStatistics(divinity.getStatistics());
+        //divinityToUpdate.setType(divinity.getType());
         return this.divinityRepository.save(divinityToUpdate);
     }
 

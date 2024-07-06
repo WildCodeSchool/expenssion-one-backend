@@ -3,6 +3,7 @@ package com.example.demo.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,12 +22,25 @@ public class Region {
     private String description;
     private String url_map;
 
-    @OneToMany(mappedBy = "region")
+    @OneToMany(mappedBy = "region",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<City> cities = new ArrayList<City>();
 
     @ManyToOne
     @JoinColumn(name = "region_id")
     private Kingdom kingdom;
+
+
+    public Region() {
+    }
+
+    public Region(String name, String description, String url_map, List<City> cities, Kingdom kingdom) {
+        this.name = name;
+        this.description = description;
+        this.url_map = url_map;
+        this.cities = cities;
+        this.kingdom = kingdom;
+    }
+
 
     public Kingdom getKingdom() {
         return kingdom;

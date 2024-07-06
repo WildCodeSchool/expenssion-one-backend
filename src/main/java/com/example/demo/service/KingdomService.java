@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.example.demo.entity.City;
 import com.example.demo.entity.Kingdom;
 import com.example.demo.repository.KingdomRepository;
 
@@ -34,7 +33,7 @@ public class KingdomService {
 
     public Kingdom UpdateKingdom(@PathVariable Long id, @RequestBody Kingdom kingdom){
         Kingdom kingdomToUpdate = this.kingdomRepository.findById(id).get();
-        kingdomToUpdate.setBelieves(kingdom.getBelieves());
+        kingdomToUpdate.setBelieveContents(kingdom.getBelieveContents());
         kingdomToUpdate.setDescription(kingdom.getDescription());
         kingdomToUpdate.setDivinities(kingdom.getDivinities());
         kingdomToUpdate.setName(kingdom.getName());

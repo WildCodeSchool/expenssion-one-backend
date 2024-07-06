@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,10 +18,19 @@ public class City {
     private String url;
 
     @ManyToOne
-    @JoinColumn(name = "city_id")
+    @JoinColumn(name = "region_id")
     private Region region;
 
+    @Column(length = 1000)
+    private String description;
+
     public City(){}
+
+        public City(String name, String description, Region region) {
+        this.name = name;
+        this.description = description;
+        this.region = region;
+    }
 
     public Long getId() {
         return id;
@@ -45,4 +55,22 @@ public class City {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
 }

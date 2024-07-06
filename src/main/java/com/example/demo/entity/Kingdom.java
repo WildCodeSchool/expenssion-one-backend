@@ -3,6 +3,9 @@ package com.example.demo.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,14 +23,15 @@ public class Kingdom {
     private String description;
     private String urlMap;
 
-    @OneToMany(mappedBy = "kingdom")
+    @OneToMany(mappedBy = "kingdom",cascade = CascadeType.ALL, orphanRemoval = true)
     List<Region> regions = new ArrayList<Region>();
 
-    @OneToMany(mappedBy = "kingdom")
+    @OneToMany(mappedBy = "kingdom",cascade = CascadeType.ALL, orphanRemoval = true)
     List<Divinity> divinities = new ArrayList<Divinity>();
 
-    @OneToMany(mappedBy = "kingdom")
-    List<Belief> believes = new ArrayList<Belief>();
+    @OneToMany(mappedBy = "kingdom",cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonProperty("believeDescription")
+    List<BeliefContent> believes = new ArrayList<BeliefContent>();
     
     public Long getId() {
         return id;
@@ -65,10 +69,10 @@ public class Kingdom {
     public void setDivinities(List<Divinity> divinities) {
         this.divinities = divinities;
     }
-    public List<Belief> getBelieves() {
+    public List<BeliefContent> getBelieveContents() {
         return believes;
     }
-    public void setBelieves(List<Belief> believes) {
+    public void setBelieveContents(List<BeliefContent> believes) {
         this.believes = believes;
     }
 
