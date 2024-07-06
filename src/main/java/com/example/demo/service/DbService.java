@@ -10,14 +10,24 @@ import java.util.Set;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.AnecdoticSecret;
+import com.example.demo.entity.BeliefContent;
+import com.example.demo.entity.City;
+import com.example.demo.entity.Divinity;
 import com.example.demo.entity.Job;
+import com.example.demo.entity.Kingdom;
+import com.example.demo.entity.Language;
 import com.example.demo.entity.PrimordialSecret;
+import com.example.demo.entity.Race;
+import com.example.demo.entity.Region;
 import com.example.demo.entity.Specialization;
 import com.example.demo.entity.SpecializationContent;
 import com.example.demo.entity.SpecializationSkill;
 import com.example.demo.repository.AnecdoticSecretRepository;
 import com.example.demo.repository.JobRepository;
+import com.example.demo.repository.KingdomRepository;
+import com.example.demo.repository.LanguageRepository;
 import com.example.demo.repository.PrimordialSecretRepository;
+import com.example.demo.repository.RaceRepository;
 import com.example.demo.repository.SpecializationRepository;
 import com.example.demo.repository.SpecializationSkillRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,19 +37,28 @@ public class DbService {
 
     private final AnecdoticSecretRepository anecdoticSecretRepository;
     private final PrimordialSecretRepository primordialSecretRepository;
+    private final RaceRepository raceRepository;
+    private final LanguageRepository languageRepository;
     private final SpecializationRepository specializationRepository;
     private final JobRepository jobRepository;
     private final SpecializationSkillRepository specializationSkillRepository;
+    private final KingdomRepository kingdomRepository;
 
-    public DbService(AnecdoticSecretRepository anecdoticSecretRepository,
-     PrimordialSecretRepository primordialSecretRepository, SpecializationRepository specializationRepository, 
-    JobRepository jobRepository, SpecializationSkillRepository specializationSkillRepository) {
+    public DbService(AnecdoticSecretRepository anecdoticSecretRepository, JobRepository jobRepository, LanguageRepository languageRepository, PrimordialSecretRepository primordialSecretRepository,
+     RaceRepository raceRepository, SpecializationRepository specializationRepository, SpecializationSkillRepository specializationSkillRepository
+     , KingdomRepository kingdomRepository) {
         this.anecdoticSecretRepository = anecdoticSecretRepository;
-        this.primordialSecretRepository = primordialSecretRepository;
-        this.specializationRepository = specializationRepository;
         this.jobRepository = jobRepository;
+        this.languageRepository = languageRepository;
+        this.primordialSecretRepository = primordialSecretRepository;
+        this.raceRepository = raceRepository;
+        this.specializationRepository = specializationRepository;
         this.specializationSkillRepository = specializationSkillRepository;
+        this.kingdomRepository = kingdomRepository;
     }
+
+
+    
 
     public void insertDB() {
         try {
@@ -48,12 +67,11 @@ public class DbService {
             AnecdoticSecret[] secretsArray = mapper.readValue(inputStream, AnecdoticSecret[].class);
             List<AnecdoticSecret> secretsList = Arrays.asList(secretsArray);
             anecdoticSecretRepository.saveAll(secretsList);
+
             InputStream inputStream2 = getClass().getResourceAsStream("/data/primordialSecrets.json");
             PrimordialSecret[] primordialSecretsArray = mapper.readValue(inputStream2, PrimordialSecret[].class);
             List<PrimordialSecret> primordialSecretsList = Arrays.asList(primordialSecretsArray);
             primordialSecretRepository.saveAll(primordialSecretsList);
-
-
 
             InputStream inputStream5 = getClass().getResourceAsStream("/data/jobs.json");
             Job[] jobArray = mapper.readValue(inputStream5, Job[].class);
@@ -83,8 +101,12 @@ public class DbService {
                 specializationRepository.save(specialization);
             }
 
+
+
+            }
+
         }
-        
+
         catch (IOException e) {
             e.printStackTrace();
         }
