@@ -34,12 +34,13 @@ public class UserService {
         this.userRepository.save(user);
     }
 
-    public void delete(String userUUID,String password) {
+    public String delete(String userUUID,String password) {
         User user = this.getUserById(userUUID);
         if (user.getPassword().equals(password)) {
             this.userRepository.delete(user);
+            return "User deleted";
         } else {
-            throw new RuntimeException("Wrong password");
+            return "Wrong password";
         }
     }
 
