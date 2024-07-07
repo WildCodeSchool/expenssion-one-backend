@@ -75,11 +75,16 @@ public class UserController {
         }
     }
 
-    @DeleteMapping("delete")
-    public void deleteUser(@RequestHeader("Authorization") String BearerHeader,@RequestParam("password") String password) {
-        String userUUID=BearerHeader.substring(BearerPrefix.length());
-        userService.delete(userUUID,password);
-    }
+@DeleteMapping("delete")
+public ResponseEntity<?> deleteUser(@RequestHeader("Authorization") String BearerHeader, @RequestParam("password") String password) {
+    try {
+        String userUUID = BearerHeader.substring(BearerPrefix.length());
+        userService.delete(userUUID, password);
+        return ResponseEntity.ok().build(); 
+    } catch (Exception e) { 
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build(); 
+}
+}
     @PostMapping("updatePersonnalData")
     public User updateUserPersonnalData(@RequestHeader("Authorization") String BearerHeader,@RequestParam("firstname") String firstname,
     @RequestParam("lastname") String lastname,@RequestParam("email") String email,@RequestParam("dateOfBirth") Date dateOfBirth) {
