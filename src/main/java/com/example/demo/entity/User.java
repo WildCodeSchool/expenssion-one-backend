@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.util.List;
 import java.util.Set;
 
+import com.example.demo.entity.Character;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
@@ -27,10 +28,11 @@ public class User {
     private String id;
     @Column(unique=true,updatable = false)
     private String pseudo;
+    private String pseudoDisplay;
     private String lastname;
     private String firstname;
     private String password;
-        private Date dateOfBirth;
+    private Date dateOfBirth;
     @Column(unique=true)
     private String email;
     private String profilPictureUrl=null;
@@ -64,6 +66,7 @@ public class User {
         this.lastname = lastname;
         this.password = password;
         this.pseudo = pseudo;
+        this.pseudoDisplay = pseudo;
     }
 
     public User() {
@@ -73,9 +76,6 @@ public class User {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getPseudo() {
         return pseudo;
@@ -174,5 +174,15 @@ public class User {
     public void setCharacters(List<Character> characters) {
         this.characters = characters;
     }
+
+    public String getPseudoDisplay() {
+        return pseudoDisplay;
+    }
+
+    public void setPseudoDisplay(String pseudoDisplay) {
+        this.pseudoDisplay = pseudoDisplay;
+    }
+
+    
 
 }
