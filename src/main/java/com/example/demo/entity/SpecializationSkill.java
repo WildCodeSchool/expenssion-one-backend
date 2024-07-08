@@ -17,7 +17,7 @@ public class SpecializationSkill{
     
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
 
     private Integer number;
     private String name;
@@ -47,7 +47,7 @@ public class SpecializationSkill{
 
 
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
