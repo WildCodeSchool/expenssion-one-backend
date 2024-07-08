@@ -38,7 +38,9 @@ public class Specialization {
     @OneToMany(mappedBy = "specialization",cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference("specialization-specializationSkill")
     @JsonProperty("skills")
-    private List<SpecializationSkill> specializationSkill;
+
+    private List<SpecializationSkill> specializationSkills;
+
     
     @OneToMany(mappedBy = "specialization",cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference("specialization-specializationContent")
@@ -50,17 +52,15 @@ public class Specialization {
 
     
 
-    public Specialization(String name, String imageUrl, Set<Job> jobs, List<SpecializationSkill> specializationSkill,
-            List<SpecializationContent> specializationContents) {
+
+    public Specialization(String name, String imageUrl, Set<Job> jobs, List<SpecializationSkill> specializationSkills,
+        List<SpecializationContent> specializationContents) {
         this.name = name;
         this.imageUrl = imageUrl;
         this.jobs = jobs;
-        this.specializationSkill = specializationSkill;
+        this.specializationSkills = specializationSkills;
         this.specializationContents = specializationContents;
     }
-
-    
-
 
 
 
@@ -93,11 +93,12 @@ public class Specialization {
     }
 
     public List<SpecializationSkill> getSpecializationSkill() {
-        return specializationSkill;
+        return specializationSkills;
     }
 
-    public void setSpecializationSkill(List<SpecializationSkill> specializationSkill) {
-        this.specializationSkill = specializationSkill;
+    public void setSpecializationSkill(List<SpecializationSkill> specializationSkills) {
+        this.specializationSkills = specializationSkills;
+
     }
 
     public List<SpecializationContent> getSpecializationContents() {
@@ -108,12 +109,7 @@ public class Specialization {
         this.specializationContents = specializationContents;
     }
 
-
-
-        
-
-
-    
+     
     
 }
     

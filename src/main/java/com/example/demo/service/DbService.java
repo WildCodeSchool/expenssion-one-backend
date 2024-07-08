@@ -129,6 +129,7 @@ public class DbService {
             }
 
 
+
                         InputStream inputStream7 = getClass().getResourceAsStream("/data/kingdoms.json");
             Kingdom[] kingdomArray = mapper.readValue(inputStream7, Kingdom[].class);
             for (Kingdom kingdom : kingdomArray) {
