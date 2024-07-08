@@ -99,7 +99,6 @@ public class DbService {
 
 
 
-
             InputStream inputStream5 = getClass().getResourceAsStream("/data/jobs.json");
             Job[] jobArray = mapper.readValue(inputStream5, Job[].class);
             List<Job> jobList = Arrays.asList(jobArray);
@@ -129,6 +128,7 @@ public class DbService {
             }
 
 
+
                         InputStream inputStream7 = getClass().getResourceAsStream("/data/kingdoms.json");
             Kingdom[] kingdomArray = mapper.readValue(inputStream7, Kingdom[].class);
             for (Kingdom kingdom : kingdomArray) {
@@ -145,6 +145,7 @@ public class DbService {
                     believeContent.setKingdom(kingdom);
                 }
                 kingdomRepository.save(kingdom);
+
             }
 
         }
