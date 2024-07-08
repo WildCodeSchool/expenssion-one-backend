@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.example.demo.entity.Job;
 
+
 @Repository
 public interface JobRepository extends JpaRepository<Job, Long>{
     Job findByName(String name);
