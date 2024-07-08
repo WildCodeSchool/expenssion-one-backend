@@ -1,0 +1,236 @@
+[
+    {"name":"Pile ou Face",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Origamiste"},
+        {"name":"Mangeur d’âmes"}
+    ],
+    "skills":[],
+    "contents":[
+    {"number":1,"content":"Les Pil ou Face sont des puissants mages, iels se font un malin plaisir à semer la confusion en toutes situations. Depuis leur plus tendre enfance, iels se sont toujours cherché sans jamais trouver leur véritable voie."},
+    {"number":2,"content":"Toutefois guidé par une apparition, un maître, les préceptes d'une croyance ou encore un violent choc passé, iels ont compris."},
+    {"number":3,"content":"Leur vie serait un savant mélange de leurs expériences ainsi que de leurs rencontres futures. Iels se retrouve donc avec un panel de compétences très variées et peuvent s'adapter à beaucoup de situations."},
+    {"number":4,"content":"Iels ont donc cultivé de sombres capacités qui leur permettent de voler momentanément  n’importe quelle apparence et quelques compétences d’arme ou de sort de leur cible."},
+    {"number":5,"content":"Iels sont de nature plutôt curieuse et n'hésitent pas à partir à l'aventure en quête de nouveaux savoir. D’autre Mages Pil ou Face on un certain mépris pour leur pouvoir et choisissent une vie d'hermite. Iels se mettent en retrait du monde après avoir blessé un compagnon, ou lorsque la mort à approcher leur proche de trop près."},
+    {"number":6,"content":"Qu'importe qu’iel soit à l'aise ou non avec leur capacités , iels sont de bon compagnons de route, iels prennent soin de leur proches grâce à leur multiples talents. Iels ne sont pas très porté sur leur récit passé et n’en parle que de façon très flou. Sans doute une habile manière de se protéger de leur second trait de personnalité bien plus sombre et mystérieux."},
+    {"number":7,"content":"En elleux s'entremêle un nombre incalculables de fragments d'âmes rester emprisonné suite à l'emprunt d’une identité ou de capacités. Iels font alors face a des sentiment de regret, de renqueure, de tristesse ou de colère qui ne leur appartiennent pas.Iels doivent alors combattre une folie intérieure et résister à l'utilisation d’une ancienne magie dévastatrice."},
+    {"number":8,"content":"Il est possible pour les mage Pil ou Face d'utiliser toutes les armes connues, ainsi que tout type d’armure qu'elle soit légère, moyenne ou lourde."}
+    ]
+    },
+    {"name":"Empoisonneur",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Herboriste"},
+    {"name":"Alchimiste"}
+    ],
+    "skills":[
+    ],
+    "contents":[
+        {"number":1,"content":"Les Empoisonneur Né, sont des érudits et ce, qu’ iels décident de faire le bien ou le mal en ce monde. Iels ont de solides connaissances en anatomie,en herboristerie, ainsi que dans le maniement des outils médicaux."},
+        {"number":2,"content":"Dans la caste des Empoisonneurs Né, on distingue beaucoup de bon élèves de divers académie qui se sentant bridé par l’éducation on opté pour les pratiques plus sombres. D’autres moin nombreux, on été initié à cet art par de dangereux exilé de toute hiérarchie sociale. D’autres encore se sont focalisés sur ces obscures pratiques alchimiques en vue d’une vengeance qui serait grandiose le temps venu."},
+        {"number":3,"content":"Mais ce qui les caractérise c’est leur passion pour les mélanges dithyrambiques. Iels considèrent  tous les éléments, qu’il soit inerte ou vivant, comme la base d’un poison mortel ou d’une potion salvatrice."},
+        {"number":4,"content":"Iels ne sont pas contre partager leur passé mais on pour habitude de ne pas trop en dévoiler sur leur ambition. Si vengence il y a iels le feront à leur manière."},
+        {"number":5,"content":"C’est d'ailleur ce qui leur donne une mauvaise réputation, et si certain en joue , d’autre se font tout simplement oublier et agissent dans l’ombre."},
+        {"number":6,"content":"Les Empoisonneur Né sont des compagnons des plus utiles, iels sont en capacité de préparer de multiples mixtures suivant les situations. Du fait de leur fragilité aux corps à corps, iels aiment pour la plupart combattre à distance derrière leur camarade."},
+        {"number":7,"content":"Toutefois ceux qui se sont orientés sur la voix du Bloqueureuses s'injectent divers types de substances qui jouent sur leur résistance afin de protéger leurs compagnons."},
+        {"number":8,"content":"Il est possible pour les Empoisonneur Né d'utiliser les seringues médicales , les dagues, les épées fines et tout type d’aiguille pour blesser au corps à corps ou soigner les leurs."},
+        {"number":9,"content":"En ce qui concerne leurs attaques à distance, iels peuvent lancer des fioles et utiliser de sombres poupées vaudou, une fois assimilées à leur cible pour les blesser ou les soigner."},
+        {"number":10,"content":"Iels sont uniquement en capacité d'équiper des armures légère."}
+    ]
+    },
+    {"name":"Brasseur non-conforme",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Alchimiste"},
+    {"name":"Brasseur"}
+    ],
+    "skills":[],
+    "contents":[
+         {"number":1,"content":"Les Brasseur non-conforme sont de nobles aventuriers du palais et de l’ivresse. Iels sont créatifs et ce depuis leur premières expériences à base de lait et de sève divers lors d’une enfance relativement mouvementée."},
+         {"number":2,"content":"L'industrie du brassage de boissons alcoolisées est en plein essor et ce depuis de nombreuses années. Bon nombre d'académies renommées en on dailleur fait leur spécialité d’étude."},
+         {"number":3,"content":"Et tandis que certains Brasseur non-conforme viennent de ces établissements plus ou moins connus, d’autres ont fait leur arme dans divers tavernes ou restaurants de campagne.D'autres encore ont rassemblé leurs attraits pour l’alchimie et les beuveries, iels ont trouvé dans le brassage une liberté complète pour leur art."},
+         {"number":4,"content":"Mais ce qui réunit ces habiles piliers de taverne c’est leur passions pour les boisson alcoolisé ponctuer ci et là de quelques castagne de comptoire."},
+         {"number":5,"content":"Iels sont par conséquent de bon bagarreureuse et n'hésitent pas à engager le combat si la situation s’y prête. Pour cela iels développent des alcools qui une fois ingéré vienne accroître certaines de leur statistique."},
+         {"number":6,"content":"Peu d'individus pourraient résister à une telle concentration d'éthanol dans leur sang et sombreraient plus ou moins rapidement dans un état second."},
+         {"number":7,"content":"Les Brasseur non-conforme sont résistants et plutôt massifs pour la plupart. Iels peuvent encaisser les bastons sans problème et ne rate jamais une occasion de lever leurs vers et de le vider dans la foulée."},
+         {"number":8,"content":"Iels sont de bon compagnons, toujours de bonne humeur,et  même dans les situation les plus désespérées iels remontent avec aisance le morale de leur groupe de voyage."},
+         {"number":9,"content":"Iels aiment raconter leur passé de voyageur, et n'hésitent pas à enrober leur aventures d’actions grandiose basé surement sur des souvenir altéré par la boisson."},
+         {"number":10,"content":"Les Brasseur non-conforme utilisent des armes tel que les masses à une main. Iels peuvent choisir de porter la canne, ou de frapper avec leur ustensile de cuisine."},
+         {"number":11,"content":"Pour les attaques à distance iels peuvent s’équiper des marteaux de lancé.leurs passion pour les bastons de taverne leur permettent d’utiliser les armes improvisés."},
+         {"number":12,"content":"Iels peuvent revétirent des armures moyenne et lourde."}
+    ]
+    },
+    {"name":"Mage de renom",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Calligraphie"},
+    {"name":"Enchantement"}
+    ],
+    "skills":[],
+    "contents":[
+    {"number":1,"content":"Les Mage de renom sont incontestablement des érudit, iels sont de brillant intellectuel et de grand stratège. Même enfants, iels dominaient leur camarade par une intelligence accrue."},
+    {"number":2,"content":"Sorti major de promotion et apparaissant comme le haut du panier  dans les divers académie des royaumes, iels sont reconnus dans l'ensemble des édifices administratifs."},
+    {"number":3,"content":"Les académies en question ne sont pas gratuites, et sont parmi les établissements plus chers, iels ont donc dû faire face à la jalousie des basses gens sans le sous."},
+    {"number":4,"content":"Les Mage de renom ont la fâcheuse tendance à remettre les plans d’action en doute s'ils ne viennent pas de d’elleux."},
+    {"number":5,"content":"Iels ont pris la décision de se concentrer sur leurs études et ont très tôt mis de côté leurs relations familiales et amicales."},
+    {"number":6,"content":"Leurs jeunesse dans les hautes sphères, les ont conditionnés à un certain niveau d’exigence et de  milieu de vie.Ce qui ne les aident pas vraiment dans leur quête d'aventures à partager avec des individus de tout horizon social."},
+    {"number":7,"content":"La plupart partagent leur passé avec fierté, avec un profond respect pour leurs universités.D’autres n'ont pas aussi bien vécu ces années d’érudition en milieu aisé, et ont une profonde haine pour les hauts milieux sociaux."},
+    {"number":8,"content":"Les Mage de renom deviennent de véritable amis, ils sont une fois leur appréhension dépasser de bon compagnons, toujours près à mettre leur compétence cérébrale au service de tou.te.s."},
+    {"number":9,"content":"Iels sont des mages puissants qui maîtrisent l’art subtile des illusions. Iels sont de nature fragile et ne sautent donc pas dans la bataille sans un bon plan qui n’implique pas qu’iels se salissent les mains."},
+    {"number":10,"content":"Iels ont trouvé des solutions pour pouvoir prendre le rôle de Bloqueureuses en lançant des sorts d’aveuglement ou de paralysie momentané."},
+    {"number":11,"content":"Iels sont en capacité d'utiliser leur bâton de mage ainsi qu’une dague dans le but d'infliger des dégâts ou de soigner une cible. À distance, ils peuvent compter sur des baguettes chargées d’énergie magique et d'étranges fioles qui peuvent être lancées sur la cible pour lui apporter soin ou blessures."},
+    {"number":12,"content":"Iels s’équipe d'armures légères uniquement."}
+    ]
+    },
+    {"name":"Traqueur sauvage",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Dépeceur"},
+    {"name":"Travailleur de cuir"}
+    ],
+    "skills":[],
+    "contents":[
+    {"number":1,"content":"Les traqueur sauvages ont senti dès leur jeune âge, l'appelle de la forêt. Pendant que les autres enfants se rendaient dans des établissement éducatif ou ou aidaient leurs parents au diverses tâches familiales , ils arpentaient les bois en quête de découvertes."},
+    {"number":2,"content":"Iels ont toujours été un peu isolés de par leur attrait pour les animaux sauvages et leur code vestimentaire précaire."},
+    {"number":3,"content":"Rapidement délaissées par leur proches, par honte ou dégoût, iels se sont fait seul et ce aux prix de quelques sacrifices."},
+    {"number":4,"content":"Certains ont par la suite trouvé des sages exilé dans les bois, ou de puissantes créatures de légende et en ont fait leurs tuteur.ices.s."},
+    {"number":5,"content":"Iels sont devenus au fil du temps d’habiles traqueurs, iels maîtrisent les parcours à travers, les plaine boisées, les jungles et autres forêts.iels sont en capacité de suivre une piste qu’elle soit humaine ou animale ainsi que de survivre dans ces milieux hostiles."},
+    {"number":6,"content":"Les traqueur sauvages ont un lourd passé social, iels ont longtemps vécu exilé du monde, et commencent à peine à en découvrir les us et coutumes. Iels doivent faire face  à de nouvelle situation et au contacte humains qui leur a jadis tant coûté."},
+    {"number":7,"content":"Iels sont sortis de leur forêt dans un but précis, et si certains ont un motif aussi noble que l’aventure d’autres on fait vœu de vengeance."},
+    {"number":8,"content":"Malgré leur passé complexe iels sont de bon compagnons, ayant vécu en autarcie il est parfois nécessaire de leur confier les secrets de la bienséance.Une fois intégré à un groupe d'aventuriers leur fournissant une seconde famille, iels seront pour sur des acolytes de choix."},
+    {"number":9,"content":"Pour celleux qui ont choisi le style de Protecteurices, iels ont développé des flèches plus fines qui , une fois plantées à un point précis , viennent à soigner leur cible."},
+    {"number":10,"content":"Les traqueur sauvages peuvent s’équiper d’armes aux corps à corps tels que les épées à une main et les haches à une main.Pour le combat à distance, iels peuvent utiliser les arcs, les arbalètes et les lance pierre."},
+    {"number":11,"content":"Iels peuvent revétirent  des armures légères et moyennes."}
+    ]
+    },
+    {"name":"Chevalier Frappe-Tonnerre",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Mineur"},
+    {"name":"Enchanteur"}
+    ],
+    "skills":[
+        {"number":3,"name":"Éclairé","characteristic":"Intelligence","description":"Enchante une armes au corps à corps , l’armes foudroie le sol lors de son impacte sur 8mr"},
+        {"number":2,"name":"Brise fuite","characteristic":"Dextérité","description":"Une armes a distance fait trébucher la cible et empêche alors sa fuite"},
+        {"number":1,"name":"Frappe approximative","characteristic":"Force","description":"la cible ayant L’armes enchanté obtient pour 1 heure un bonus de force de +2"}
+    ],
+    "contents":[
+    {"number":1,"content":"Les Chevalier Frappe-Tonnerre ont eu des enfances bien semblables, fils de militaires de la marine ou de miliciens, ils ont grandi à proximité des forts, des remparts ou des ports."},
+    {"number":2,"content":"Iels se sont forgé entre école martial et entraînement acharné mais n'avaient que peu de talent dans le domaine de la frappe brute."},
+    {"number":3,"content":"Afin de pallier ce manque, iels ont été formés a lié combat d’armes et force élémentaire.Et ce fut une révélation!Iels ont alors commencé un long périple d’apprentissage pour réussir a emprunté la force des éléments en vue de renforcer leur armes et armures."},
+    {"number":4,"content":"Iels sont de nature majoritairement curieuse, et ont par déclinaison un profond respect pour les éléments naturels."},
+    {"number":5,"content":"Certains en revanche ont sombré dans une arrogance sans borne et cherchent à dominer le plan élémentaire. Iels créent de dangereux phénomènes de cause à effet en accablant les éléments de leur volonté destructrice."},
+    {"number":6,"content":"Les Chevalier Frappe-Tonnerre sont devenuent des grands mages et les plus puissant.e.s sont même en capacité de combiner plusieurs facteurs élémentaires afin d’obtenir des enchantements hors-norme."},
+    {"number":7,"content":"Iels n'ont aucun souci à compter leur passé, iels sont fiers de leur parcours et de leur situation actuelle."},
+    {"number":8,"content":"Iels sont des compagnons de choix, leurs droitures et leurs curiosités fond de ces chevalier élémentaires des camarde prêt à s' impliquer.Iels peuvent toutefois s'enflammer et a la moindre occasion foudroyer l'être qui s’en prendraient à leur groupe d'aventuriers."},
+    {"number":9,"content":"Les Chevalier Frappe-Tonnerre ont tout un arsenal qui va de paire avec leur magie d’enchantement."},
+    {"number":10,"content":"Iels ont les capacités de manier les masses, les épées et haches qu'elles soit a une ou deux mains. Iels sont aussi capables de lancer de solide marteaux."},
+    {"number":11,"content":"Iels peuvent équiper des armures moyennes et lourdes."}
+    ]
+    },
+    {"name":"Grand charlatan",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Ingénierie"},
+    {"name":"Calligraphie"}
+    ],
+    "skills":[
+    {"number":1,"name":"Piège maison","characteristic":"Dextérité","description":"Vous fabriquez un piège improvisé mais efficace"},
+    {"number":2,"name":"Analyse et dépose ","characteristic":"Dextérité","description":"Vous identifiez et démonter avec précaution un piège"},
+    {"number":3,"name":"Offre trompeuse","characteristic":"Addiction","description":"Vous offrez un ver d'alcool à une cible, si elle le boit,votre jet de dextérité pour un vol à la tire obtient un bonus de +3"}],
+    "contents":[
+    {"number":1,"content":"Les Grand Charlatan sont d'abile farceurs, iels maîtrisent les mensonges et les coups tordus comme personne. Iels ont de solides connaissances dans l’art subtile de la fourberie et de la pose de pièges."},
+    {"number":2,"content":"Déjà enfant, iels mettaient leur dextérité au services de blagues.Très assidu dans certains domaines scolaires, iels séchaient les autres, avec astuces pour s'atteler à de petits larcins."},
+    {"number":3,"content":"A leur adolescence beaucoup de Grand Charlatan se sont affranchis et ont quitté le nid familiale en quête d’aventure et de pécule."},
+    {"number":4,"content":"En grandissant iels ont trouvé pour certain.e.s des causes à défendre et œuvre dans ce sens. D’autres trafics pour leur compte avec un très grand sérieux, et vont jusqu'à créer des combinés à grande échelle.D’autres sont toujours en quête de denier facile et ont pour méthode de truander, de subtilisé ou d'arnaquer le premier venu."},
+    {"number":5,"content":"Quoi qu’il en soit les Grand Charlatan sont certes de fieffé escroc mais iels seront être plus ou moins fidèle à leur groupe de compagnons. Leurs compétences en termes d’embuscade et de fraude en tout genre sont fort appréciées par leurs camarades. Iels permettent de démêler certaines situations via leur compétence de crochetage ou de négociation."},
+    {"number":6,"content":"Iels ont pour habitude de raconter leur passé en les enrobant de multiples anecdotes peu fiables. Iels restent très flou sur leur véritable intention. Et ne dévoilent jamais le montant exact de leur bourse."},
+    {"number":7,"content":"Iels mettent un point d’honneur à gagner leur paries, même si il faut qu’iels truandes pour que les résultat soit en leur faveur. Très peu de Grand Charlatan son bon joueureuses et laissent leurs adversaires partir avec le butin."},
+    {"number":8,"content":"Iels sont en capacité d'équiper les cannes et les dagues ce qui va avec leur apparence de gentilhomme.En ce qui concerne les armes équipables à distance pour les Grand Charlatan , l'arbalète, le lance pierre, les marteaux de lancer et les explosifs sont des armes de choix."},
+    {"number":9,"content":"Iels équipent les armures légères et moyennes."},
+    {"number":10,"content":"Iels peuvent utiliser les armes et armures exa-mécha ( voir 7-Choisir un équipement)."}
+    ]
+    },
+    {"name":"Mage élémentaire",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Joaillier"},
+    {"name":"Archéologie"}
+    ],
+    "skills":[
+    {"number":1,"name":"Poing de feu","characteristic":"Intelligence","description":"Vous enflammez votre poing et lancer une boule de feu"},
+    {"number":2,"name":"Basier intérieur","characteristic":"Intelligence","description":"Vous vous enflammer, votre prochain jet de dé stat sera doublé"},
+    {"number":3,"name":"Fracas des flots","characteristic":"Intelligence","description":"Vous crée une vague de 2m de haut a partir d’une moindre goutte"}
+    ],
+    "contents":[
+        {"number":1,"content":"Les Mage élémentaire étaient autrefois des enfants, sans histoires. D'ailleurs aucune affinité magique ne leur a été découverte."},
+        {"number":2,"content":"Un jour, iels ont subi un cataclysme qui les a bouleversées. Iels se mirent alors à ressentir le vent quand il n’y en avait pas, la chaleur des flammes lors des feux de camp, la force de l’eau  lorsqu'elle ne frémissait même pas les moindres secousses sismiques aussi infime soit elle."},
+        {"number":3,"content":"La magie c’était éveiller en elleux, et leurs premières heures en tant que mage furent plutôt catastrophiques. De petits incendies ci et là, des houles de grandes marées dans des lacs, des séismes localisés, des rafales de vent et autres désagréments viennent ponctuer leur quotidien a la moindre contrariété."},
+        {"number":4,"content":"Les Mage élémentaire ont rapidement été jugée dangereux pour leur village ou capital, et ont été expulsés pour le bien de tou.te.s."},
+        {"number":5,"content":"Certains sont alors partis s'exiler loin de tout afin de maîtriser leur magies, passant de longues heures à méditer, iels ont depuis longtemps oublié leur rancœur quant à leur village natal et rêvent d’y retourner le héros."},
+        {"number":6,"content":"D’autres on vu en eux naître une haine profond, et ceux qui n’on pas trouvé de maître ou d'académie pour les canalisé, sont devenu hargneux et haire sans autres butte que la vengeances, à travers le royaume en quêtes de savoir et de destruction."},
+        {"number":7,"content":"Toujours est-il que Les Mage élémentaire sont très réservés quant à leur passé, qu’il n’est pardonné ou pas leur exil. Iels reste très mystérieux et n’en parle le moins possible."},
+        {"number":8,"content":"Iels sont malgré ça de  bon compagnon, attentif et prévenant face au danger, iels n'hésitent pas à tout mettre en œuvre pour protéger leur groupe d’aventure."},
+        {"number":9,"content":"Mais il arrive encore aujourd'hui, que submerger par une trop grande quantité d’émotions, leurs puissance se déchainent."},
+        {"number":10,"content":"Au corps à corps iels sont en capacité de se munirent de bâton ,de dague et d’armes élémentaire improvisé."},
+        {"number":11,"content":"En ce qui concerne les attaques à distance, iels maîtrisent les baguettes et les fioles."},
+        {"number":12,"content":"Iels sont en capacité d'équiper les armures légères."}
+    ]
+    },
+    {"name":"Ignoble célébrité",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Cuisinier"},
+    {"name":"Saltimbanque"}
+    ],
+    "skills":[
+    {"number":1,"name":"Fausse note","characteristic":"Charisme","description":"Vous produisez un son aigue, assourdissant ou cible ou la revigorant"},
+    {"number":2,"name":"Immondice sonor","characteristic":"Charisme","description":"Vous jouez un air affreux, les cibles se concentre sur vous pour stoppez le massacre"},
+    {"number":3,"name":"Mélodie douteuse","characteristic":"Charisme","description":"Une bonne mélodie s'accompagne souvent de percussion, pour remédier à cela, vous frapper 5 coups en rythme et ce en une action"}
+    ],
+    "contents":[
+    {"number":1,"content":"Les ignoble célébrité sont des musicien.ne.s déjantées , rodeur.euses de taverne, iels sont du genre à trancher mélodieusement la racaille avec classe et acharnement."},
+    {"number":2,"content":"Iels ont depuis l’enfance ce talent inné pour la soupe musicale au sonorité particulièrement douteuse. C’est d'ailleurs ce qui leur valut de multiples bagarres dans leurs jeunes années."},
+    {"number":3,"content":"Certain.e.s ont alors opté pour une des quelques académies de musique afin de s'améliorer et d’en faire une plus noble discipline. D’autres au contraire ont pris le contre pied et on voyagé sans cesse en quête de nouvelle sonorité et d’instrument aussi étrange que possible.Certain.e.s encore, se sont retirés dans les montagnes, les marais, les forêts et autres lieux reculés afin de travailler leur art."},
+    {"number":4,"content":"La caste des ignoble célébrité a pour trait commun, d'être très ouvert d’esprits. Iels puisent leur inspiration dans de trépidantes aventures rythmées de fausses notes."},
+    {"number":5,"content":"Si iels ont l'air un peu benêt a première vue, ce sont en réalité d’habile combatnt.e et n'hésitent pas trouver des fonction dérivé à leurs divers instrument de musique. Noter ici qu'un instrument utilisé dans sa fonction principale peut tout aussi faire de gros dégâts."},
+    {"number":6,"content":"Iels n'ont aucun problème à parler de leur passé mais omettent souvent leurs altercations de taverne ou leur diverses condamnations par les patrouilles des milices pour trouble à l'ordre publique, entre autres choses."},
+    {"number":7,"content":"Iels sont de par leurs divers différents de vrais experts en survie. Entre pauvreté, exile, bannissement, paries perdu, abus d’alcool, leurs vie, leurs a donner beaucoup d’occasion de faire sans le confort ..."},
+    {"number":8,"content":"Les ignoble célébrité sont des compagnons à double tranchant, certes il remontent le morale du groupe, ayant toujours l’énergie pour pousser la chansonnette. Mais s’embarque quelquefois dans des galére dont nul n’a envie de faire l’expérience."},
+    {"number":9,"content":"Iels n'hésite jamais à sauter dans un combat qui engagerait leur camarade afin de pouvoir leur prêter main forte."},
+    {"number":10,"content":"Leurs mélodies peuvent aussi être de puissants remèdes si elles sont jouées avec le cœur."},
+    {"number":11,"content":"Iels sont en capacité de dévoiler le plein potentiel des instruments de musique et ont peuvent également s’équiper d’instruments de cuisine et de tout type d'armes improvisés."},
+    {"number":12,"content":"Les ignoble célébrité  peuvent s'équiper d'armures légères, moyennes et lourdes."}
+    ]
+    },
+    {"name":"Chevalier d’extase",
+    "imageUrl":"http://example.image",
+    "jobs":[
+        {"name":"Mineur"},
+    {"name":"Forgeron"}
+    ],
+    "skills":[
+    {"number":1,"name":"Riposte","characteristic":"Force","description":"Permet de frapper en riposte d’une parade ou d’un coup infligé"},
+    {"number":2,"name":"Rigueur et Honneur","characteristic":"Rapidité","description":"Vous prenez l'initiative et parez le coup porté à un allié"},
+    {"number":3,"name":"Posture du rempart","characteristic":"Constitution","description":"Vous prenez la posture de l’élite du Rempart de la haine, tout autres milicien se plie à votre cause"}
+    ],
+    "contents":[
+    {"number":1,"content":"Les chevalier d’extase sont une caste de noble chevalier bénit par les dieux, déjà très jeunes, iel ont été sélectionnés par les miliciens du royaume pour leur prouesse au combat."},
+    {"number":2,"content":"Les meilleurs de ces jeunes furent envoyés au “Rempart de la haine“ une forteresse reconnue pour ses formations militaires exemplaires."},
+    {"number":3,"content":"A peine arrivés au Rempart, iels ont été répartis en équipe de deux et entraîner à redevenir des héro.ine.s de guerre.Des duo fusionnels ayant soif de gloire au nom des armées du royaume."},
+    {"number":4,"content":"Mais si nul ne peut remettre en cause la qualité de la formation militaire du Rempart, l’on peut en revanche souligner son éthique répugnante."},
+    {"number":5,"content":"Car pour confirmer la fin de leur curseur à la forteresse, les compagnons de chaque duo devaient s'affronter dans un duel mortel."},
+    {"number":6,"content":"Lae vainqueur.e serait alors élu Chevalier.ere."},
+    {"number":7,"content":"Après un combat à contre cœur certains sont restés au Rempart avant de rejoindre une milice et  d’autres ont été graciés après quelques années sur les différents fronts."},
+    {"number":8,"content":"Mais certain n’on jamais supporter leurs duel et on quitter le fort en quêtes d'oublie."},
+    {"number":9,"content":"Les chevalier d’extase n’ affectionnent par conséquent pas vraiment parler de leur passé, et se contentsent souvent d’un regard triste lorsqu’on en vient à les questionner."},
+    {"number":10,"content":"Et iel est difficile pour elleux de créer de nouveaux liens d'amitiés mais étant de nature protectrice, et avec un peu de temps iels deviennent de fidèle compagnons."},
+    {"number":11,"content":"Iels mettent un point d'honneur à défendre leur camarade route, et sont à l'écoute des sentiments de leur groupe."},
+    {"number":12,"content":"Iels ont appris et relativisé et à apprécier la vie pour ces petits plaisirs."},
+    {"number":13,"content":"Les chevalier d’extase peuvent équiper les masses, les épées et  les haches quelle soit a une ou deux mains. Iels peuvent également utiliser les marteaux de lancé pour toucher à distance."},
+    {"number":14,"content":"Les chevalier d’extase ont la capacité d’équiper un boucliers et  une armes qu’importe qu'elle soit a une ou deux mains."},
+    {"number":15,"content":"Iels sont en capacité d'équiper uniquement les armures lourdes."}
+    ]
+    }
+    
+    ]
