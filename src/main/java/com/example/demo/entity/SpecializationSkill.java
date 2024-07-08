@@ -51,10 +51,6 @@ public class SpecializationSkill{
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
     public Integer getNumber() {
         return number;
     }
@@ -88,8 +84,6 @@ public class SpecializationSkill{
     }
 
 
-
-
     public Specialization getSpecialization() {
         return specialization;
     }
@@ -98,9 +92,6 @@ public class SpecializationSkill{
     public void setSpecialization(Specialization specialization) {
         this.specialization = specialization;
     }
-
-    
-
-    
+ 
 }
 
