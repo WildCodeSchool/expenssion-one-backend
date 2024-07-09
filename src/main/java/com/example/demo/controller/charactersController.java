@@ -67,9 +67,6 @@ public class charactersController {
         }
     }
 
-    // @GetMapping("user/{id}")
-    // public List<Character> getCharacterByUserId(@PathVariable Long id) {
-    //     return characterRepository.findByUserId(id);
-    // }
+
     
 }
