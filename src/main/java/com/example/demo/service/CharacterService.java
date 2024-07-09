@@ -58,4 +58,19 @@ public class CharacterService {
         return this.characterRepository.save(characterToUpdate);
     
     }
+
+    public boolean deleteCharacter(Long id,String UserUUID){
+        if(this.characterRepository.findById(id).get().getUser().getId().equals(UserUUID)){
+        this.characterRepository.deleteById(id);
+        return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+    public List<Character> getCharacterByUserId(String userUUID){
+        List<Character> characters = this.characterRepository.findByUserId(userUUID);
+        return characters;
+    }
 }
