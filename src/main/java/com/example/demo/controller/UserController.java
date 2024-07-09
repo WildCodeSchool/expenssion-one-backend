@@ -118,18 +118,6 @@ public class UserController {
     public User updateProfilPicture(@RequestHeader("Authorization") String BearerHeader,@RequestParam("profilPictureUrl") String profilPictureUrl) {
         String userUUID=BearerHeader.substring(BearerPrefix.length());
         return userService.updateProfilPicture(userUUID,profilPictureUrl);
-    }
-    
-    
-    
-
-
-    
-    
-
-
-
-
-    
+    }   
     
 }
