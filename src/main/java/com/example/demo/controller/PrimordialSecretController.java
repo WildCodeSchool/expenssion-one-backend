@@ -21,7 +21,7 @@ public class PrimordialSecretController {
     private PrimordialSecretService primordialSecretService;
 
     @Operation(summary = "Get all primordial secrets", description = "Get all primordial secrets")
-    @GetMapping("")
+    @GetMapping("/all")
     public List<PrimordialSecret> getAll() {
         return this.primordialSecretService.getAll();
     }

@@ -21,7 +21,7 @@ public class RaceController {
   private RaceService raceService;
 
   @Operation(summary = "Get all races", description = "Get all races")
-  @GetMapping("")
+  @GetMapping
   public List<Race> getAll() {
     return raceService.getAll();
   }
