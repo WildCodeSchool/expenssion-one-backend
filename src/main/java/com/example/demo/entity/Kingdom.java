@@ -3,6 +3,7 @@ package com.example.demo.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.persistence.CascadeType;
@@ -27,10 +28,12 @@ public class Kingdom {
     List<Region> regions = new ArrayList<Region>();
 
     @OneToMany(mappedBy = "kingdom",cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference("kingdom-divinity")
     List<Divinity> divinities = new ArrayList<Divinity>();
 
     @OneToMany(mappedBy = "kingdom",cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonProperty("believeDescription")
+    @JsonManagedReference("kingdom-believeContent")
     List<BeliefContent> believes = new ArrayList<BeliefContent>();
     
     public Long getId() {

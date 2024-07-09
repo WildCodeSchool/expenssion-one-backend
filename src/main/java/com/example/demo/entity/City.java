@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,6 +21,7 @@ public class City {
 
     @ManyToOne
     @JoinColumn(name = "region_id")
+    @JsonIgnore
     private Region region;
 
     @Column(length = 1000)
