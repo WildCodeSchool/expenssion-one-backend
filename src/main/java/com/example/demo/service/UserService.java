@@ -44,6 +44,10 @@ public class UserService {
         }
     }
 
+    public User findById(String id) {
+        return this.userRepository.findById(id).get();
+    }
+
     public User findByPseudo(String pseudo) {
         return this.userRepository.findByPseudo(pseudo);
     }

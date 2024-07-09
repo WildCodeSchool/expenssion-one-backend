@@ -21,7 +21,7 @@ public class AnecdoticSecretController {
     private AnecdoticSecretService anecdoticSecretService;
 
     @Operation(summary = "Get all anecdotic secrets", description = "Get all anecdotic secrets")
-    @GetMapping("")
+    @GetMapping("all")
     public List<AnecdoticSecret> getAll() {
         return this.anecdoticSecretService.getAll();
     }

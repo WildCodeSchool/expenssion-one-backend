@@ -4,7 +4,6 @@ import java.sql.Date;
 import java.util.List;
 import java.util.Set;
 
-import com.example.demo.entity.Character;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
@@ -182,7 +181,5 @@ public class User {
     public void setPseudoDisplay(String pseudoDisplay) {
         this.pseudoDisplay = pseudoDisplay;
     }
-
-    
 
 }

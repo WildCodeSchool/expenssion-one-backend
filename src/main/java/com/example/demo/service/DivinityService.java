@@ -33,12 +33,9 @@ public class DivinityService {
 
     public Divinity UpdateDivinity(@PathVariable Long id, @RequestBody Divinity divinity){
         Divinity divinityToUpdate = this.divinityRepository.findById(id).get();
-       // divinityToUpdate.setEffects(divinity.getEffects());
         divinityToUpdate.setGender(divinity.getGender());
         divinityToUpdate.setKingdom(divinity.getKingdom());
         divinityToUpdate.setName(divinity.getName());
-        //divinityToUpdate.setStatistics(divinity.getStatistics());
-        //divinityToUpdate.setType(divinity.getType());
         return this.divinityRepository.save(divinityToUpdate);
     }
 

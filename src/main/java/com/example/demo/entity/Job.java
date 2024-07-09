@@ -32,8 +32,6 @@ public class Job {
         this.name = name;
     }
 
-    
-
     public Long getId() {
         return id;
     }
@@ -53,12 +51,5 @@ public class Job {
     public void setSpecializations(Set<Specialization> specializations) {
         this.specializations = specializations;
     }
-
- 
-
-
-
-
-    
-
+       
 }
