@@ -19,9 +19,11 @@ public class Job {
     private Long id;
 
     private String name;
+
     @ManyToMany(mappedBy = "jobs")
     @JsonIgnore
     private Set<Specialization> specializations;
+
 
 
     public Job(){}
@@ -48,6 +50,6 @@ public class Job {
 
     public void setSpecializations(Set<Specialization> specializations) {
         this.specializations = specializations;
-    }   
-
+    }
+       
 }

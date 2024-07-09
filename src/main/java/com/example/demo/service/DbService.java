@@ -73,6 +73,32 @@ public class DbService {
             List<PrimordialSecret> primordialSecretsList = Arrays.asList(primordialSecretsArray);
             primordialSecretRepository.saveAll(primordialSecretsList);
 
+ 
+
+            InputStream inputStream3 = getClass().getResourceAsStream("/data/language.json");
+            Language[] languageArray = mapper.readValue(inputStream3, Language[].class);
+            List<Language> languageList = Arrays.asList(languageArray);
+            languageRepository.saveAll(languageList);
+
+             InputStream inputStream4 = getClass().getResourceAsStream("/data/race.json");
+            Race[] racesArray = mapper.readValue(inputStream4, Race[].class);
+            for (Race race : racesArray) {
+                Set<Language> languages = new HashSet<>();
+                for (Language language : race.getLanguages()) {
+                    Language existingLanguage = languageRepository.findByName(language.getName());
+                    if (existingLanguage != null) {
+                        languages.add(existingLanguage);
+                    } else {
+                        Language newLanguage = new Language(language.getName(), language.getDescription());
+                        languages.add(languageRepository.save(newLanguage));
+                    }
+                }
+                race.setLanguages(languages);
+                raceRepository.save(race);
+            }
+
+
+
             InputStream inputStream5 = getClass().getResourceAsStream("/data/jobs.json");
             Job[] jobArray = mapper.readValue(inputStream5, Job[].class);
             List<Job> jobList = Arrays.asList(jobArray);
@@ -102,6 +128,23 @@ public class DbService {
             }
 
 
+
+                        InputStream inputStream7 = getClass().getResourceAsStream("/data/kingdoms.json");
+            Kingdom[] kingdomArray = mapper.readValue(inputStream7, Kingdom[].class);
+            for (Kingdom kingdom : kingdomArray) {
+                for (Region region : kingdom.getRegions()) {
+                    region.setKingdom(kingdom);
+                    for (City city : region.getCities()) {
+                        city.setRegion(region);
+                    }
+                }
+                for (Divinity divinity : kingdom.getDivinities()) {
+                    divinity.setKingdom(kingdom);
+                }
+                for (BeliefContent believeContent : kingdom.getBelieveContents()) {
+                    believeContent.setKingdom(kingdom);
+                }
+                kingdomRepository.save(kingdom);
 
             }
 

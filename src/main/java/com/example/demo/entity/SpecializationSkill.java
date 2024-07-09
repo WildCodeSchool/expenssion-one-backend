@@ -45,8 +45,6 @@ public class SpecializationSkill{
     }
 
 
-
-
     public Long getId() {
         return id;
     }
@@ -88,10 +86,10 @@ public class SpecializationSkill{
         return specialization;
     }
 
-
     public void setSpecialization(Specialization specialization) {
         this.specialization = specialization;
     }
+
  
 }
 

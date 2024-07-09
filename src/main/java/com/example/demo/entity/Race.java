@@ -1,7 +1,6 @@
 package com.example.demo.entity;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -20,6 +19,7 @@ public class Race {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+  
   private String name;
   @Column(columnDefinition = "TEXT")
   private String description;
@@ -33,32 +33,34 @@ public class Race {
   private Integer number_additional_language;
   private String url;
 
+
+  
+  @ManyToMany
+  @JoinTable(name = "race_language", joinColumns = @JoinColumn(name = "race_id"), inverseJoinColumns = @JoinColumn(name = "language_id"))
+  private Set<Language> languages;
+
   public Race() {
   }
 
-  public Race(String[] default_languages, String description, Long id, Integer max_age, Integer max_height,
-      Integer min_age, Integer min_height, String name, Integer number_additional_language, String racial_trait,
-      Integer speed, String url) {
-    this.default_languages = default_languages;
-    this.description = description;
-    this.id = id;
-    this.max_age = max_age;
-    this.max_height = max_height;
-    this.min_age = min_age;
-    this.min_height = min_height;
-    this.name = name;
-    this.number_additional_language = number_additional_language;
-    this.racial_trait = racial_trait;
-    this.speed = speed;
-    this.url = url;
-  }
+    public Race(String[] default_languages, String description, Set<Language> languages, Integer max_age, Integer max_height, Integer min_age, Integer min_height, String name, Integer number_additional_language, String racial_trait, Integer speed, String url) {
+        this.default_languages = default_languages;
+        this.description = description;
+        this.languages = languages;
+        this.max_age = max_age;
+        this.max_height = max_height;
+        this.min_age = min_age;
+        this.min_height = min_height;
+        this.name = name;
+        this.number_additional_language = number_additional_language;
+        this.racial_trait = racial_trait;
+        this.speed = speed;
+        this.url = url;
+    }
+
+
 
   public Long getId() {
     return id;
-  }
-
-  public void setId(Long id) {
-    this.id = id;
   }
 
   public String getName() {
@@ -149,15 +151,12 @@ public class Race {
     this.url = url;
   }
 
-  @ManyToMany
-  @JoinTable(name = "race_language", joinColumns = @JoinColumn(name = "race_id"), inverseJoinColumns = @JoinColumn(name = "language_id"))
-  private List<Language> languages = new ArrayList<>();
 
-  public List<Language> getLanguages() {
+  public Set<Language> getLanguages() {
     return languages;
   }
 
-  public void setLanguages(List<Language> languages) {
+  public void setLanguages(Set<Language> languages) {
     this.languages = languages;
   }
 
