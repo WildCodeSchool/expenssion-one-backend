@@ -8,12 +8,14 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Character;
 import com.example.demo.service.CharacterService;
+
 
 
 
@@ -44,6 +46,22 @@ public class charactersController {
         character.setUser(user);
         return characterService.createCharacter(character);
     }
+
+
+    @PostMapping("updateCharacrer")
+    public String udpateCharacter(@RequestHeader("Authorization") String BearerHeader,@RequestBody Character character) {
+        String userUUID=BearerHeader.substring(BearerPrefix.length());
+        if(!character.getUser().getId().equals(userUUID)){
+            return "You are not allowed to update this character";
+        }
+        else{
+        characterService.UpdateCharacter(character);
+        return "Character updated";
+        }
+   
+   
+    }
+    
 
     @GetMapping("/{id}")
     public Character getCharacterById(@PathVariable Long id) {

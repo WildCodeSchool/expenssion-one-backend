@@ -29,8 +29,8 @@ public class CharacterService {
         return this.characterRepository.save(character);
     }
 
-    public Character UpdateCharacter(Long id, Character character){
-        Character characterToUpdate = this.characterRepository.findById(id).get();
+    public Character UpdateCharacter(Character character){
+        Character characterToUpdate = this.characterRepository.findById(character.getId()).get();
         characterToUpdate.setAge(character.getAge());
         characterToUpdate.setAddiction(character.getAddiction());
         characterToUpdate.setAdditionalJob(character.getAdditionalJob());
