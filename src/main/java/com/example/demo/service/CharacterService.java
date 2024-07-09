@@ -29,8 +29,8 @@ public class CharacterService {
         return this.characterRepository.save(character);
     }
 
-    public Character UpdateCharacter(Long id, Character character){
-        Character characterToUpdate = this.characterRepository.findById(id).get();
+    public Character UpdateCharacter(Character character){
+        Character characterToUpdate = this.characterRepository.findById(character.getId()).get();
         characterToUpdate.setAge(character.getAge());
         characterToUpdate.setAddiction(character.getAddiction());
         characterToUpdate.setAdditionalJob(character.getAdditionalJob());
@@ -57,5 +57,20 @@ public class CharacterService {
         characterToUpdate.setWisdom(character.getWisdom());
         return this.characterRepository.save(characterToUpdate);
     
+    }
+
+    public boolean deleteCharacter(Long id,String UserUUID){
+        if(this.characterRepository.findById(id).get().getUser().getId().equals(UserUUID)){
+        this.characterRepository.deleteById(id);
+        return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+    public List<Character> getCharacterByUserId(String userUUID){
+        List<Character> characters = this.characterRepository.findByUserId(userUUID);
+        return characters;
     }
 }

@@ -31,14 +31,15 @@ public class BeliefContent {
 
     
 
-
     public BeliefContent(Integer number, String content, Kingdom kingdom) {
         this.number = number;
         this.content = content;
         this.kingdom = kingdom;
     }
 
-
+    public Long getId() {
+        return id;
+    }
 
 
     public Integer getNumber() {
