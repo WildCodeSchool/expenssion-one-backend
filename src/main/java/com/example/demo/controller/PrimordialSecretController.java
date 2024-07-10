@@ -35,8 +35,8 @@ public class PrimordialSecretController {
 
     @Operation(summary = "Get one random primordial secret", description = "Get one random primordial secret")
     @GetMapping("/random-primordial-secret")
-    public Long getRandomPrimordialSecretId() {
-        return primordialSecretService.getRandomPrimordialSecretId();
+    public PrimordialSecret getRandomPrimordialSecret() {
+        return primordialSecretService.getRandomPrimordialSecret();
     }
 
 }

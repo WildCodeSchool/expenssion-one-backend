@@ -34,8 +34,8 @@ public class AnecdoticSecretController {
 
     @Operation(summary = "Get one random anecdotic secret", description = "Get one random anecdotic secret")
     @GetMapping("/random-anecdotic-secret")
-    public Long getRandomSecretId() {
-        return anecdoticSecretService.getRandomAnecdoticSecretId();
+    public AnecdoticSecret getRandomSecret() {
+        return anecdoticSecretService.getRandomAnecdoticSecret();
     }
 
 }
