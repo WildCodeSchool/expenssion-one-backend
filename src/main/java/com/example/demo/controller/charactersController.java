@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Character;
+import com.example.demo.entity.User;
 import com.example.demo.service.CharacterService;
-
+import com.example.demo.service.UserService;
 
 
 
@@ -25,9 +26,6 @@ import com.example.demo.service.CharacterService;
 @RequestMapping("/characters")
 public class charactersController {
 
-    
-
-
         @Value("${myApp.BearerHeader}")
         private  String BearerPrefix;
 
@@ -35,13 +33,11 @@ public class charactersController {
         private CharacterService characterService;
         private UserService userService;
 
-  
-
 
     @PostMapping("/addCharacter")
     public Character addCharacter(@RequestHeader("Authorization") String BearerHeader) {     
         String userUUID=BearerHeader.substring(BearerPrefix.length());
-        User user=userService.findById(userUUID).get();
+        User user=userService.findById(userUUID);
         Character character = new Character();
         character.setUser(user);
         return characterService.createCharacter(character);
@@ -73,6 +69,7 @@ public class charactersController {
         String userUUID=BearerHeader.substring(BearerPrefix.length());
         return characterService.deleteCharacter(id,userUUID);
     }
+
 
     @GetMapping("/user")
     public List<Character> getCharacterByUserId(@RequestHeader("Authorization") String BearerHeader) {

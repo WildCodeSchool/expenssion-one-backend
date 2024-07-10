@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +25,7 @@ public class BeliefContent {
 
     @ManyToOne
     @JoinColumn(name = "beliefContent_id")
+    @JsonBackReference("kingdom-believeContent")
     private Kingdom kingdom;
 
 

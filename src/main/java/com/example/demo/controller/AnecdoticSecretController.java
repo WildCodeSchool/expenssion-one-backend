@@ -21,7 +21,7 @@ public class AnecdoticSecretController {
     private AnecdoticSecretService anecdoticSecretService;
 
     @Operation(summary = "Get all anecdotic secrets", description = "Get all anecdotic secrets")
-    @GetMapping("")
+    @GetMapping("all")
     public List<AnecdoticSecret> getAll() {
         return this.anecdoticSecretService.getAll();
     }
@@ -34,8 +34,8 @@ public class AnecdoticSecretController {
 
     @Operation(summary = "Get one random anecdotic secret", description = "Get one random anecdotic secret")
     @GetMapping("/random-anecdotic-secret")
-    public Long getRandomSecretId() {
-        return anecdoticSecretService.getRandomAnecdoticSecretId();
+    public AnecdoticSecret getRandomSecret() {
+        return anecdoticSecretService.getRandomAnecdoticSecret();
     }
 
 }

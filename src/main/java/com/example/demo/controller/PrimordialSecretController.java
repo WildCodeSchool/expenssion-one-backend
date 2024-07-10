@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.PrimordialSecret;
-import com.example.demo.service.AnecdoticSecretService;
 import com.example.demo.service.PrimordialSecretService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -20,10 +19,10 @@ public class PrimordialSecretController {
 
     @Autowired
     private PrimordialSecretService primordialSecretService;
-    private AnecdoticSecretService anecdoticSecretService;
+   
 
     @Operation(summary = "Get all primordial secrets", description = "Get all primordial secrets")
-    @GetMapping("")
+    @GetMapping("/all")
     public List<PrimordialSecret> getAll() {
         return this.primordialSecretService.getAll();
     }
@@ -36,8 +35,8 @@ public class PrimordialSecretController {
 
     @Operation(summary = "Get one random primordial secret", description = "Get one random primordial secret")
     @GetMapping("/random-primordial-secret")
-    public Long getRandomPrimordialSecretId() {
-        return primordialSecretService.getRandomPrimordialSecretId();
+    public PrimordialSecret getRandomPrimordialSecret() {
+        return primordialSecretService.getRandomPrimordialSecret();
     }
 
 }
