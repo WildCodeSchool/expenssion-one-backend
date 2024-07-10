@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.User;
@@ -14,6 +15,9 @@ public class UserService {
 
         @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
 
         public List<User> getAll() {
@@ -85,8 +89,9 @@ public class UserService {
 
     public User changePassword(String userUUID, String oldPassword, String newPassword) {
         User user = this.getUserById(userUUID);
-        if (user.getPassword().equals(oldPassword)) {
-            user.setPassword(newPassword);
+
+        if (passwordEncoder.matches(oldPassword, user.getPassword())) {
+            user.setPassword(passwordEncoder.encode(newPassword));
             this.userRepository.save(user);
             return user;
         } else {
