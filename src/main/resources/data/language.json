@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Commun",
+    "description": "langue que tout le monde parle, générale"
+  },
+  { "name": "Nain", "description": "nain" },
+  {
+    "name": "Bestial",
+    "description": "langue subtile comprise par les animaux"
+  },
+  {
+    "name": "Forestier",
+    "description": "parler aux vivants de la forêt hors animal, ressenti"
+  },
+  {
+    "name": "Reptilien",
+    "description": "langue subtile destinée aux reptiles et s’étend à certains types de batraciens"
+  },
+  {
+    "name": "Gobelin nouveau",
+    "description": "mélange entre Gobelin ancien et certains mots communs"
+  },
+  {
+    "name": "Gobelin ancien",
+    "description": "la langue originelle des Gobelins"
+  },
+  {
+    "name": "Elder",
+    "description": "création de leur propre langage pour se différencier des dieux."
+  },
+  {
+    "name": "Elder ancien",
+    "description": "Une langue que parlaient les dieux."
+  },
+  { "name": "Angélique", "description": "langue des anges" },
+  { "name": "Nécromant", "description": "langue des morts et des esprits" },
+  { "name": "Diabolique", "description": "langue des diables" },
+  {
+    "name": "Démoniaque",
+    "description": "langue des démons (pas forcément mauvais ces démons)"
+  },
+  {
+    "name": "Sanguin",
+    "description": "langue des vampires et des chauve-souris"
+  },
+  {
+    "name": "Elémental",
+    "description": "la compréhension de l’intention d’un élément et lecture desévénements ou présences passées"
+  },
+  {
+    "name": "Langue de Comptoir",
+    "description": "patois dérivé du commun qui reste incompréhensible si tu ne le parles pas"
+  },
+  { "name": "Féérique", "description": "langue des fées farceuses" },
+  {
+    "name": "Minérale",
+    "description": "compréhension de la terre, roche, permet de détecter deséboulements , transmission du savoir, histoire"
+  },
+  {
+    "name": "Zarga",
+    "description": "langue des êtres aquatiques (femme-murène)"
+  },
+  {
+    "name": "Langue des Signe",
+    "description": "langage des signes avec tes mains ou tes pieds"
+  },
+  {
+    "name": "Langue de terrain",
+    "description": " langage militaire codéifié qui s’applique la gestuelle et le parler"
+  },
+  { "name": "Acoustique", "description": "la compréhension des ondes" }
+]

@@ -27,9 +27,9 @@ public class AnecdoticSecretService {
     
     private Random random = new Random();
 
-    public Long getRandomAnecdoticSecretId() {
+    public AnecdoticSecret getRandomAnecdoticSecret() {
         List<AnecdoticSecret> anecdoticSecrets = anecdoticSecretRepository.findAll();
         int randomIndex = random.nextInt(anecdoticSecrets.size());
-        return anecdoticSecrets.get(randomIndex).getId();
+        return anecdoticSecrets.get(randomIndex);
     }
 }

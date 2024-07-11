@@ -27,9 +27,9 @@ public class PrimordialSecretService {
 
     private Random random = new Random();
 
-    public Long getRandomPrimordialSecretId() {
+    public PrimordialSecret getRandomPrimordialSecret() {
         List<PrimordialSecret> primordialSecrets = primordialSecretRepository.findAll();
         int randomIndex = random.nextInt(primordialSecrets.size());
-        return primordialSecrets.get(randomIndex).getId();
+        return primordialSecrets.get(randomIndex);
     }
 }
