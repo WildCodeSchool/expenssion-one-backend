@@ -1,6 +1,6 @@
 [
     {"name":"Pile ou Face",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/pile-face.png",
     "jobs":[
         {"name":"Origamiste"},
         {"name":"Mangeur d’âmes"}
@@ -18,7 +18,7 @@
     ]
     },
     {"name":"Empoisonneur",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/empoisoneur.png",
     "jobs":[
         {"name":"Herboriste"},
     {"name":"Alchimiste"}
@@ -39,7 +39,7 @@
     ]
     },
     {"name":"Brasseur non-conforme",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/brasseur.png",
     "jobs":[
         {"name":"Alchimiste"},
     {"name":"Brasseur"}
@@ -61,7 +61,7 @@
     ]
     },
     {"name":"Mage de renom",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/mage.png",
     "jobs":[
         {"name":"Calligraphie"},
     {"name":"Enchantement"}
@@ -83,7 +83,7 @@
     ]
     },
     {"name":"Traqueur sauvage",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/traqueur.png",
     "jobs":[
         {"name":"Dépeceur"},
     {"name":"Travailleur de cuir"}
@@ -104,7 +104,7 @@
     ]
     },
     {"name":"Chevalier Frappe-Tonnerre",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/chevalier.png",
     "jobs":[
         {"name":"Mineur"},
     {"name":"Enchanteur"}
@@ -129,7 +129,7 @@
     ]
     },
     {"name":"Grand charlatan",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/charlatan.png",
     "jobs":[
         {"name":"Ingénierie"},
     {"name":"Calligraphie"}
@@ -152,7 +152,7 @@
     ]
     },
     {"name":"Mage élémentaire",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/mage-elementaire.png",
     "jobs":[
         {"name":"Joaillier"},
     {"name":"Archéologie"}
@@ -178,7 +178,7 @@
     ]
     },
     {"name":"Ignoble célébrité",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/celebrity.png",
     "jobs":[
         {"name":"Cuisinier"},
     {"name":"Saltimbanque"}
@@ -204,7 +204,7 @@
     ]
     },
     {"name":"Chevalier d’extase",
-    "imageUrl":"http://example.image",
+    "imageUrl":"/assets/specialization/chevalier-extase.png",
     "jobs":[
         {"name":"Mineur"},
     {"name":"Forgeron"}
